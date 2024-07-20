@@ -3,15 +3,15 @@
   hosts: vpn_server
   become: yes
   vars:
-    country: "UA"
-    province: "kyiv"
-    city: "kyivy"
-    organization: "V8-Garage"
-    email: "info.ok@yahoo.com"
-    organizational_unit: "V8-Garage"
+    country: "country"
+    province: "province"
+    city: "city"
+    organization: "organization"
+    email: "email@email"
+    organizational_unit: "organizational_unit"
     local_user: "ubuntu"
     vpn_user: "client1"
-    server_ip: "v8.kmshvsm.org"
+    server_ip: "dns or server_ip"
     packages:
       - openvpn
       - easy-rsa
