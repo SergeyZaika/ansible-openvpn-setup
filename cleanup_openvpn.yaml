@@ -42,12 +42,6 @@
         path: /home/ubuntu/client-configs
         state: absent
 
-    - name: Remove user 'ubuntu' from sudoers
-      lineinfile:
-        path: /etc/sudoers
-        state: absent
-        regexp: '^ubuntu'
-
     - name: Flush iptables rules
       command: iptables -F
 
